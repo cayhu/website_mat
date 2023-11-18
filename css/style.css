@@ -1,0 +1,386 @@
+.slider,.list-slider{
+    width: 100%;
+    position: relative;
+    height: 500px;
+}
+.swiper-slide img{
+    width: 100%;
+    object-fit: cover;
+}
+.cus-container {
+    position: relative;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.cus-section .cus-container {
+    display: -webkit-box;
+    display: flex;
+    position: relative;
+}
+.cus-row {
+    width: 100%;
+}
+.cus-column {
+    position: relative;
+}
+.cus-column-wrap {
+    padding: 30px 0;
+}
+.cus-widget-wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+}
+.cus-widget-wrap>.cus-element {
+    width: 100%;
+}
+.cus-element >.cus-widget-container {
+    margin: 0px 0px 40px 0px;
+}
+.rt-el-title{
+    position: relative;
+}
+.rtin-title {
+    font-size: 32px;
+    color: #1C4A87;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+.rt-el-title:after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 45px;
+    background-color: #1C4A87;
+    left: 0;
+    bottom: -24px;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.cus-section {
+    width: 100%;
+    padding: 35px 0px 35px 0px;
+    position: relative;
+}
+.cus-section.cus-section-boxed>.cus-container {
+    max-width: 1180px;
+}
+.cus-section .cus-container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+#why-section {
+    background: #ffffff;
+    padding: 2rem 0;
+}
+#why-section .item-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#why-section .item-list .item {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: 0px 0px 6px rgba(30, 34, 86, 0.16);
+    border-radius: 24px;
+    margin: 0 1rem;
+}
+#why-section .item-list .item .head {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+#why-section .item-list .item .head .icon {
+    margin-bottom: 1rem;
+}
+#why-section .item-list .item .head .title {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #1e2256;
+}
+#why-section .item-list .item .head .title * {
+    display: flex;
+    font-size: 16px;
+    margin: 0;
+}
+#why-section .item-list .item .body {
+    font-size: 16px;
+    text-align: justify;
+    color: #3e3e3e;
+}
+.cus-widget {
+    position: relative;
+    width: 100%;
+}
+.departments-box-layout4update {
+    background-image: unset;
+    border: unset;
+    background-color: rgb(227, 242, 255);
+    border-radius: 8px;
+    padding: 0;
+    padding-bottom: 2rem;
+}
+.departments-box-layout4update:hover {
+    cursor: pointer;
+
+}
+.departments-box-layout4update .item-img {
+    margin-bottom: 20px;
+    height: 200px;
+    overflow: hidden;
+
+}
+.departments-box-layout4update .item-img img {
+    max-width: unset;
+    left: unset;
+    object-fit: cover;
+    height: 100%;
+}
+
+.departments-box-layout4update:hover .item-img img {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    /* animation: toTopFromBottom 0.5s forwards; */
+}
+
+@keyframes toTopFromBottom{
+    49% {
+        transform: translateY(50%);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+.departments-box-layout4update .item-title {
+    margin-bottom: 0;
+    min-height: 64px;
+    text-align: center;
+}
+.departments-box-layout4update .item-title {
+    font-size: 22px;
+}
+.departments-box-layout4update .item-title a, .departments-box-layout4update .item-title a:hover {
+    color: #1C4A87;
+    font-size: 16px;
+}
+.departments-box-layout4update p {
+    text-align: center;
+    padding: 0 10px;
+    transition: max-height 0.2s ease-out;
+    color: #6A6969;
+
+    display: block;
+  	display: -webkit-box;
+  	height: 16px*1.3*3;
+  	font-size: 16px;
+  	line-height: 1.3;
+  	-webkit-line-clamp: 3;  /* số dòng hiển thị */
+  	-webkit-box-orient: vertical;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	margin-top:10px;
+}
+
+
+/* .departments-box-layout4update:hover p {
+    height: 150px;
+    overflow: visible;
+    max-height: 150px;
+    transition: max-height 0.2s ease-out;
+} */
+.departments-box-layout4update .gradient-btn{
+    display: flex;
+    justify-content: center
+}
+.departments-box-layout4update .gradient-btn .gradient-accent {
+    font-weight: 300;
+    display: inline-block;
+    line-height: 1;
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 3px;
+    color: #fff;
+    fill: #fff;
+    text-align: center;
+    transition: all .3s;
+    background: #1C4A87 !important;
+}
+.cus-top-section{
+    background-color: #f5f8fa;
+}
+
+#doctors-section {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0;
+    position: relative;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+#doctors-section .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#doctors-section .head .left-col {
+    flex: 0 0 50%;
+}
+#doctors-section .title {
+    font-weight: 600;
+}
+
+#doctors-section .head .right-col {
+    flex: 0 0 50%;
+}
+#doctors-section .item-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+}
+#doctors-section .item-list .item {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    background: #ffffff;
+    box-shadow: 0px 0px 6px rgba(30, 34, 86, 0.16);
+    border-radius: 24px;
+    margin: 1rem;
+    flex: 1 1 30%;
+}
+#doctors-section .item-list .item .image {
+    height: 160px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background-color: rgb(227, 242, 255);
+}
+#doctors-section .item-list .item .image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+.item-list .content .desc{
+    display: block;
+  	display: -webkit-box;
+  	height: 16px*1.3*3;
+  	font-size: 16px;
+  	line-height: 1.3;
+  	-webkit-line-clamp: 3;  /* số dòng hiển thị */
+  	-webkit-box-orient: vertical;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	margin-top:10px;
+}
+.blog-posts-heading {
+    display: flex;
+    padding: 2rem;
+    font-weight: 700;
+}
+.blog-posts-heading .action {
+    margin-left: 1rem;
+    color: #1C4A87;
+    cursor: pointer;
+}
+.blog-posts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.blog-posts .cus-grid-item {
+    display: flex;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.blog-posts .blog-box-layout {
+    cursor: pointer;
+    display: flex;
+    border-bottom: 1px dashed rgb(228, 232, 236);
+    padding-bottom: 3rem;
+}
+.blog-posts .blog-box-layout .item-img {
+    flex: 0 0 50%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.blog-posts .blog-box-layout .item-img a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.blog-box-layout .item-img img {
+    transform: scale(1);
+    transition: all 0.3s ease-out;
+    width: 100%;
+}
+
+.elementor img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+.blog-posts .blog-box-layout .item-content {
+    padding: 0 1rem;
+    position: relative;
+}
+
+.blog-posts .blog-box-layout .item-content .item-title {
+    padding-top: 1rem;
+    font-size: 14px;
+    height: unset;
+}
+.blog-box-layout .item-content .item-title a {
+    color: #111111;
+    transition: all 0.3s ease-out;
+}
+.blog-box-layout .item-content p {
+    display: block;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 5.4em;
+    line-height: 1.8em;
+    border-bottom: 0;
+    font-size: 14px;
+}
+
+.bg-pr{
+    background-color: #1C4A87!important;
+}
+.testmonial-box-layout .item-img {
+    width: 200px;
+}
+.testmonial-box-layout .item-content .item-title {
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 10;
+}
